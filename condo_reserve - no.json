@@ -1,0 +1,87 @@
+{
+  "id": "4a43e4c0-b590-4dc6-8813-b719d9128053",
+  "name": "condo_reserve - no",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "condo_reserve-followup"
+  ],
+  "contexts": [
+    "condo_reserve-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "9cdaa00c-ba8f-4183-9271-7cf4c96a3a90",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "condo_reserve.condo_reserve-no",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "service_no",
+          "dataType": "@service_no",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$service_no",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "서비스가 종료되었습니다."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "9cdaa00c-ba8f-4183-9271-7cf4c96a3a90",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "종료",
+          "userDefined": true,
+          "alias": "service_no",
+          "meta": "@service_no"
+        }
+      ],
+      "count": 0,
+      "id": "b2beb794-2cb1-435f-9112-8e630a4288c8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "exit",
+          "userDefined": false,
+          "alias": "service_no",
+          "meta": "@service_no"
+        }
+      ],
+      "count": 0,
+      "id": "226a44da-a704-419e-ba58-22fbbe0f5f80",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

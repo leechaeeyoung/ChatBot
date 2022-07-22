@@ -1,0 +1,517 @@
+{
+  "id": "b7b1927c-d946-4275-ab8a-c8803dc2d1e0",
+  "name": "condo_reserve - condoreserve",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "condo_reserve-followup"
+  ],
+  "contexts": [
+    "condo_reserve-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "9cdaa00c-ba8f-4183-9271-7cf4c96a3a90",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "condo_reserve.condo_reserve-custom",
+      "affectedContexts": [
+        {
+          "name": "condo_reserve-condoreserve-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "condo_type",
+          "dataType": "@condo_type",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "콘도를 선택해주세요"
+          ],
+          "value": "$condo_type",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "select_month",
+          "dataType": "@select_month",
+          "isList": false,
+          "required": false,
+          "prompts": [
+            "원하시는 날짜를 입력해주세요"
+          ],
+          "value": "$select_month",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "select_day",
+          "dataType": "@select_day",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "원하시는 날짜를 입력해주세요"
+          ],
+          "value": "$select_day",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "select_year",
+          "dataType": "@select_year",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$select_year",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "quests_num",
+          "dataType": "@quests_num",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "투숙인원을 입력해주세요"
+          ],
+          "value": "$quests_num",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "room_type",
+          "dataType": "@room_type",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "금연방/흡연방 중 원하시는 방을 입력해주세요"
+          ],
+          "value": "$room_type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "예약이 완료되었습니다. 예약하신 콘도 명은 $condo_type, 투숙 날짜는 $select_year-$select_month-$select_day입니다. 객실은 $room_type이고 총 투숙 인원은 $quests_nu$입니다"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "9cdaa00c-ba8f-4183-9271-7cf4c96a3a90",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "흡연",
+          "userDefined": true,
+          "alias": "room_type",
+          "meta": "@room_type"
+        }
+      ],
+      "count": 0,
+      "id": "f486a4df-25a9-44f0-9ff0-e68ce330e072",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "금연",
+          "userDefined": false,
+          "alias": "room_type",
+          "meta": "@room_type"
+        }
+      ],
+      "count": 0,
+      "id": "160613d9-7150-4743-8ebd-8a89c8d49bfd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "흡연방",
+          "userDefined": false,
+          "alias": "room_type",
+          "meta": "@room_type"
+        }
+      ],
+      "count": 0,
+      "id": "5d7eb2e4-6a97-4ffc-aadb-39b14b1a7c58",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "금연방",
+          "userDefined": false,
+          "alias": "room_type",
+          "meta": "@room_type"
+        }
+      ],
+      "count": 0,
+      "id": "650a48ec-4a81-4b65-8c4f-f5118878f2b7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "3",
+          "userDefined": false,
+          "alias": "quests_num",
+          "meta": "@quests_num"
+        }
+      ],
+      "count": 0,
+      "id": "adc5d7b8-06d4-41a6-a7a5-bff5d3eb1333",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "3명",
+          "userDefined": false,
+          "alias": "quests_num",
+          "meta": "@quests_num"
+        }
+      ],
+      "count": 0,
+      "id": "d3fa7d2c-2c63-4510-afac-764f5950ea47",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "2명",
+          "userDefined": false,
+          "alias": "quests_num",
+          "meta": "@quests_num"
+        }
+      ],
+      "count": 0,
+      "id": "5e5bf50f-aaa0-4c03-9dc8-c6235f71e452",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "1명",
+          "userDefined": false,
+          "alias": "quests_num",
+          "meta": "@quests_num"
+        }
+      ],
+      "count": 0,
+      "id": "4cf131d2-8b10-4ce7-9fa6-352bd91e44f3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "7",
+          "userDefined": false,
+          "alias": "select_month",
+          "meta": "@select_month"
+        },
+        {
+          "text": "-",
+          "userDefined": false
+        },
+        {
+          "text": "29",
+          "userDefined": true,
+          "alias": "select_day",
+          "meta": "@select_day"
+        }
+      ],
+      "count": 0,
+      "id": "591d5231-81ca-458f-b950-d4c1050933fd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "09",
+          "userDefined": false,
+          "alias": "select_month",
+          "meta": "@select_month"
+        },
+        {
+          "text": "-",
+          "userDefined": false
+        },
+        {
+          "text": "13",
+          "userDefined": true,
+          "alias": "select_day",
+          "meta": "@select_day"
+        }
+      ],
+      "count": 0,
+      "id": "e7cea45a-7c67-472d-a782-6ddc179843ff",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "9월",
+          "userDefined": false,
+          "alias": "select_month",
+          "meta": "@select_month"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "21일",
+          "userDefined": true,
+          "alias": "select_day",
+          "meta": "@select_day"
+        }
+      ],
+      "count": 0,
+      "id": "a5790664-abf5-41ff-b9a9-7b30260143e1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "2022년",
+          "userDefined": false,
+          "alias": "select_year",
+          "meta": "@select_year"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "8월",
+          "userDefined": true,
+          "alias": "select_month",
+          "meta": "@select_month"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "13일",
+          "userDefined": true,
+          "alias": "select_day",
+          "meta": "@select_day"
+        }
+      ],
+      "count": 0,
+      "id": "0ed76707-4fe8-4d6c-a4a2-682d3f91aa95",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "2022",
+          "userDefined": false,
+          "alias": "select_year",
+          "meta": "@select_year"
+        },
+        {
+          "text": "-",
+          "userDefined": false
+        },
+        {
+          "text": "12",
+          "userDefined": true,
+          "alias": "select_month",
+          "meta": "@select_month"
+        },
+        {
+          "text": "-",
+          "userDefined": false
+        },
+        {
+          "text": "10",
+          "userDefined": true,
+          "alias": "select_day",
+          "meta": "@select_day"
+        }
+      ],
+      "count": 0,
+      "id": "5a82a978-93f1-4d88-9cc9-419a9c08d99f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "서울",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "b0428f68-ebe4-4a6b-ba51-6c449d9807e9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "제주",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "43ec5ae2-1365-4261-96e0-d16a9387f05e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "강원",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "1b3b4e7e-8235-4aae-a5f0-f3e55fdeac46",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "강원롯데콘도",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "c50f897f-59ba-42c5-82c4-0c7bb416e791",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "제주신화콘도",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "efabcdc7-edb3-4441-bd35-fe9c96f3c449",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "서울한화콘도",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "7347583a-6d7a-4578-a252-83e9d676eb65",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "신화",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "9b741569-bd6a-4ac8-a703-47f3a8bcaa20",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "한화",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "a1eca230-b692-498e-8351-e147b22794b5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "롯데",
+          "userDefined": false,
+          "alias": "condo_type",
+          "meta": "@condo_type"
+        }
+      ],
+      "count": 0,
+      "id": "d1bdc0d2-1558-451d-9190-8267559e5268",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

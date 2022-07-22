@@ -1,0 +1,74 @@
+{
+  "id": "9cdaa00c-ba8f-4183-9271-7cf4c96a3a90",
+  "name": "condo_reserve",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "condo_reserve-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "service",
+          "dataType": "@service",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$service",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "예약 서비스를 이용하십니까? 종료를 원하시면 종료 또는 exit를 입력해주세요"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "시작",
+          "userDefined": true,
+          "alias": "service",
+          "meta": "@service"
+        }
+      ],
+      "count": 0,
+      "id": "9f3cdfbe-9a78-428e-a9cd-b6c5d69dfd56",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,101 @@
+{
+  "id": "847d6016-2f42-4fe2-b456-1e0af90ed732",
+  "name": "condo_reserve - yes",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "condo_reserve-followup"
+  ],
+  "contexts": [
+    "condo_reserve-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "9cdaa00c-ba8f-4183-9271-7cf4c96a3a90",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "condo_reserve.condo_reserve-yes",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "service_yes",
+          "dataType": "@service_yes",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$service_yes",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "예약을 원하시는 콘도를 입력해주세요 ( 1. 서울한화콘도  ,  2. 제주신화콘도  , 3. 강원롯데콘도)"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "9cdaa00c-ba8f-4183-9271-7cf4c96a3a90",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "예약서비스",
+          "userDefined": true,
+          "alias": "service_yes",
+          "meta": "@service_yes"
+        }
+      ],
+      "count": 0,
+      "id": "7368dc6a-6e47-48a9-855d-9976e2ce35d0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "예",
+          "userDefined": false,
+          "alias": "service_yes",
+          "meta": "@service_yes"
+        }
+      ],
+      "count": 0,
+      "id": "c137724d-93bd-405f-a3c2-eb3e84cfc5b8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "예약",
+          "userDefined": true,
+          "alias": "service_yes",
+          "meta": "@service_yes"
+        }
+      ],
+      "count": 0,
+      "id": "b878f685-5545-401f-beda-9b98614b327c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
