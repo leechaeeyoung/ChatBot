@@ -1,7 +1,7 @@
 # 시나리오형 챗봇 구축
 
-<img src="https://user-images.githubusercontent.com/94501397/180139112-c444f876-9056-402c-a268-b3f5a7b5f948.png" width="200" height="400"/>
-<img src="(https://user-images.githubusercontent.com/94501397/180139239-068f853c-16a3-430c-a8f8-db6da6b1a38f.png" width="200" height="400"/>
+### 예약-서비스 시나리오 작성
+![image](https://user-images.githubusercontent.com/94501397/180920691-935a18c7-62ab-4694-b2b7-a409dc38fe0e.png)
 
 
 ### Dialogflow를 이용한 챗봇 테스트 화면
